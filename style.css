@@ -1,0 +1,234 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Montserrat';
+}
+
+footer {
+    background-color: #7d32e8;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f8f9fa;
+}
+
+.s-icon{
+    color: #7d32e8;
+    transition: 0.5s ease-in-out;
+}
+
+s.icon:hover{
+    transform: scale(1.1) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #7d32e8;
+  }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #8738f5;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline-item::before,
+.timeline-item::after {
+    content: " ";
+    display: table;
+}
+
+.timeline-item::after {
+    clear: both;
+}
+
+.timeline-item .timeline-panel {
+    width: 45%;
+    float: left;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.timeline-item .timeline-panel:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #8738f5;
+    z-index: 100;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:nth-child(even) .timeline-panel {
+    float: right;
+}
+
+.timeline-item:nth-child(even) .timeline-badge {
+    top: 16px;
+    right: 50%;
+    left: auto;
+    margin-right: -25px;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: #8738f5;
+}
+
+.timeline-description {
+    margin: 0;
+    color: #333;
+}
+
+.timeline-date {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+    color: #8738f5;
+}
+
+.modal-body p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.modal-body img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal overlay için blur efekti */
+.modal-backdrop {
+    backdrop-filter: brightness(1%);
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: backdrop-filter 0.3s ease;
+}
+
+
+
+
+
+
+
+
+/* */
+.container {
+    max-width: 1200px; /* Sayfa içeriğinin maksimum genişliği */
+    margin: 0 auto; /* İçeriğin sayfa ortasında olmasını sağlar */
+    padding: 20px; /* Kenar boşlukları */
+}
+
+/* gallery.html */
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #7d32e8;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #7d32e8;
+}
+
+.navbar-brand:hover
+{
+    font-weight: 500;
+    color: #7d32e8;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: rgb(77, 77, 77) !important;
+}
+
+.nav-link:hover {
+    color: #7d32e8 !important;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item {
+    padding: 10px;
+}
